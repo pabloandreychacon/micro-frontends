@@ -7,6 +7,8 @@ declare module "remote_app/Button" {
 }
 
 declare module "remote_app/Header" {
-  const Header: React.FC;
+  const Header: React.FC<{
+    userData?: { user: string; count: number };
+  }>;
   export default Header;
 }
